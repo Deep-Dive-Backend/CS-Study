@@ -11,6 +11,7 @@ Ioc(Inversion of Control) 란?
 제어의 역전 즉, 메서드나 객체의 호출 작업을 개발자가 아닌 스프링에게 제어권을 넘기는 것
 스프링 컨테이너에게 제어권을 넘겨 스프링 컨테이너가 흐름을 제어하게 됨
 ```
+
 >[!Note]
 > IoC컨테이너가 다른 언어에도 있는지?
 > 
@@ -62,6 +63,7 @@ Ioc(Inversion of Control) 란?
   - 자바 설정 파일
     - @Configuration과 @Bean 을 사용해 자바 **클래스**에 직접 빈 등록
     - 좀 더 명시적으로 빈을 설정하고 싶을 때 사용
+
 >@Component : 
 >스프링 빈으로 등록하기 위한 기본적인 어노테이션<br>
 >@Service, @Controller, @Repository 등은 @Component를 확장한 형태로, 각 클래스가 어떠한 역할을 하는지에 대한 설명을 해주는 느낌
