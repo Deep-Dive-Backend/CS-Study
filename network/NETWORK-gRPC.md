@@ -49,3 +49,11 @@ class Program{
 
 ##### json vs proto
 ![json vs proto](/network/img/NETWORK-gRPC_json_proto.jpg)
+
+
+
+
+
+
+https://www.youtube.com/watch?v=uwrR5e5_FH8
+https://www.youtube.com/watch?v=r1eJjMeFnnw
