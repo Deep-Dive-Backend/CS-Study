@@ -1,0 +1,85 @@
+name: 스터디 기록
+description: 스터디가 끝나고 스터디에 대해 기록하며, 이 후 일정에 대해 작성합니다.
+title: "[STUDY] 2025-04-14"
+labels: ["⏭️ Next 스터디"]
+assignees: ["sujeong-0", "hyoddong"]
+body:
+  - type: input
+    id: study_date
+    attributes:
+      label: "📅 이번 스터디 일정"
+      description: "스터디 일시를 YYYY-MM-DD HH:MM 형식으로 입력하세요. ()내에는 스터디 시간을 작성합니다."
+      placeholder: "2025-04-23 11:00(2:30)"
+      value: "2025-04-23 11:00(2:30)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: attendees
+    attributes:
+      label: "👥 참석자"
+      description: "스터디에 참여한 사람의 이름을 나열합니다."
+      placeholder: |
+        - [ ] @hyoddong
+        - [ ] @sujeong-0
+      value: |
+        - [x] @hyoddong
+        - [x] @sujeong-0
+    validations:
+      required: true
+
+  - type: textarea
+    id: topics
+    attributes:
+      label: "📚 진행한 토픽"
+      description: "진행한 주제와 담당자를 적고, 완료 여부를 체크합니다. #[PR 번호] @[담당자] e.g. - [ ] #33 @sujeong-0"
+      placeholder: |
+        - [ ] Spring Bean의 생성과 관리 @hyoddong
+        - [ ] Dispatcher Servlet의 동작 원리 @sujeong-0
+      value: |
+        - [x] # @hyoddong
+        - [x] # @sujeong-0
+    validations:
+      required: true
+
+  - type: input
+    id: hotfix_deadline
+    attributes:
+      label: "📅 보충 commit 마감"
+      description: "PR 마감 일자를 YYYY-MM-DD HH:MM 형식으로 입력하세요."
+      placeholder: "2025-04-25 23:59"
+      value: "2025-04-25 23:59"
+
+  - type: input
+    id: next_study_date
+    attributes:
+      label: "⏭️ 다음 스터디 일정"
+      description: "다음 스터디 일정을 YYYY-MM-DD HH:MM 형식으로 입력하세요."
+      placeholder: "2025-04-23 11:00"
+      value: "2025-04-25 23:59"
+    validations:
+      required: true
+
+  - type: input
+    id: next_pr_deadline
+    attributes:
+      label: "📅 다음 스터디 PR 마감"
+      description: "다음 PR 마감 일자를 YYYY-MM-DD HH:MM 형식으로 입력하세요."
+      placeholder: "2025-03-26 23:59"
+      value: "2025-04-25 23:59"
+    validations:
+      required: true
+
+  - type: textarea
+    id: next_topics
+    attributes:
+      label: "📚 다음 스터디 토픽"
+      description: "다음 스터디 주제와 담당자를 리스트로 작성합니다."
+      placeholder: |
+        - [ ] [스터디 주제] @sujeong-0
+        - [ ] [스터디 주제] @hyoddong
+      value: |
+        - [ ] # @sujeong-0
+        - [ ] # @hyoddong
+    validations:
+      required: true
